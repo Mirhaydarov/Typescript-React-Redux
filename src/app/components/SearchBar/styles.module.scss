@@ -1,0 +1,20 @@
+$border-color: #edf2f7;
+$border-color--hover: #89a8ff;
+$bg-color: #f7fafc;
+$font-color: #2d3748;
+
+.search-bar {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid $border-color;
+  background-color: $bg-color;
+  color: $font-color;
+  border-radius: 10px;
+  appearance: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  
+  &:hover, &:focus {
+    border: 2px solid darken($border-color--hover, 15);
+  }
+}
