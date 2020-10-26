@@ -1,0 +1,85 @@
+$primary--color: #333333;
+$border--color: #d6d6d6;
+$body-bgc--color: #dddddd;
+$body-bgc--hover-color: #89a8ff;
+
+$head--font-size: 1.5rem;
+$body--font-size: 1.2rem;
+$body--image-max-width: 100%;
+$body--image-width: 7rem;
+$body--image-height: 7rem;
+$body--image-radius: 50%;
+
+$head--padding: 0.5rem;
+$body--padding: 1rem;
+
+@mixin linkStyle() {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+.wrap {
+  composes: wrap from '../../../root-styles.scss';
+}
+
+.user-list {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  letter-spacing: 0.7px;
+  word-wrap: break-word;
+  border: 1px solid $border--color;
+  border-collapse: collapse;
+}
+
+.table-head {
+  font-size: $head--font-size;
+
+  & tr > th {
+    padding: $head--padding;
+  }
+}
+
+.table-body {
+  cursor: pointer;
+  transition: 1s all;
+  border-top: 1px solid $border--color;
+  font-size: $body--font-size;
+
+  & tr > td {
+    padding: $body--padding;
+  }
+
+  &:nth-of-type(odd) {
+    background-color: $body-bgc--color;
+  }
+
+  &:hover {
+    background-color: $body-bgc--hover-color;
+  }
+  
+  &__image {
+    border-radius: $body--image-radius;
+    object-fit: cover;
+    width: $body--image-width;
+    height: $body--image-height;
+    max-width: $body--image-max-width;
+  }
+  
+  &__phone {
+    @include linkStyle();
+  }
+  
+  &__email {
+    @include linkStyle();
+  }
+}
