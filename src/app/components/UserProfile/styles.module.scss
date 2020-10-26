@@ -1,0 +1,93 @@
+$primary--color: #333333;
+$border--color: #d6d6d6;
+$body-bgc--color: #dddddd;
+$body-bgc--hover-color: #89a8ff;
+
+$head--font-size: 1.5rem;
+$body--font-size: 1.2rem;
+$body--image-max-width: 100%;
+$body--image-width: 7rem;
+$body--image-height: 7rem;
+$body--image-radius: 50%;
+
+$head--padding: 0.5rem;
+$body--padding: 1rem;
+
+@mixin listTemplate($areaValue) {
+  grid-area: $areaValue;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.wrap {
+  composes: wrap from '../../../root-styles.scss';
+}
+
+.spinner {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.profile {
+  padding-top: 50px;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.avatar {
+  grid-area: profile-avatar;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.list-container {
+  display: grid;
+  grid-template-areas: 
+      "profile-avatar list-user" 
+      "list-company list-address";
+  justify-content: center;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.list-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.list-user {
+  @include listTemplate(list-user);
+}
+
+.list-company {
+  @include listTemplate(list-company);
+}
+
+.list-address {
+  @include listTemplate(list-address);
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.list-item-desc {
+  font-weight: 700;
+}
+
+.baseButton {
+  border: 2px solid darkgray;
+  background-color: gray;
+}
+
+.button {
+  composes: button from "../../../root-styles.scss";
+}
