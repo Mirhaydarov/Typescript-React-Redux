@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserList /> Allows users to select a profile 1`] = `
+<header class="header">
+  <nav class="nav">
+    <a class="navLink"
+       href="/"
+    >
+      Home
+    </a>
+    <input class="searchBar"
+           type="search"
+           placeholder="Search people by name..."
+           value
+    >
+  </nav>
+</header>
+<section class="profile">
+  <div class="wrap">
+    <h2 class="title">
+      Profile:&nbsp;Leanne Graham
+    </h2>
+    <div class="listContainer">
+      <img class="avatar"
+           src="https://cdn.pixabay.com/user/2020/10/03/07-51-18-705_250x250.jpg"
+           alt="Leanne Graham"
+      >
+      <div>
+        <ul class="listUser">
+          <li class="listItem">
+            <span class="listItemDesc">
+              Name:
+            </span>
+            &nbsp;Leanne Graham
+          </li>
+          <li class="listItem">
+            <span class="listItemDesc">
+              Email:
+            </span>
+            &nbsp;Sincere@april.biz
+          </li>
+          <li class="listItem">
+            <span class="listItemDesc">
+              Phone:
+            </span>
+            &nbsp;1-770-736-8031 x56442
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="listTitle">
+          Company
+        </h3>
+        <ul class="listCompany">
+          <li class="listItem">
+            <span class="listItemDesc">
+              Name:
+            </span>
+            &nbsp;Romaguera-Crona
+          </li>
+          <li class="listItem">
+            <span class="listItemDesc">
+              Catch phrase:
+            </span>
+            &nbsp;Multi-layered client-server neural-net
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="listTitle">
+          Address
+        </h3>
+        <ul class="listAddress">
+          <li class="listItem">
+            <span class="listItemDesc">
+              City:
+            </span>
+            &nbsp;Gwenborough
+          </li>
+          <li class="listItem">
+            <span class="listItemDesc">
+              Street:
+            </span>
+            &nbsp;Kulas Light
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`<UserList /> Matches snapshot 1`] = `
+<header class="header">
+  <nav class="nav">
+    <input class="searchBar"
+           type="search"
+           placeholder="Search people by name..."
+           value
+    >
+  </nav>
+</header>
+<section class="userList">
+  <div class="wrap">
+    <table class="table">
+      <thead class="tableHead">
+        <tr>
+          <th>
+            Image
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Phone
+          </th>
+          <th>
+            Email
+          </th>
+        </tr>
+      </thead>
+      <tbody class="tableBody">
+        <tr>
+          <td>
+            <img class="tableBodyImage"
+                 src="https://cdn.pixabay.com/user/2020/10/03/07-51-18-705_250x250.jpg"
+                 alt="Leanne Graham"
+            >
+          </td>
+          <td>
+            Leanne Graham
+          </td>
+          <td>
+            <a class="tableBodyPhone"
+               href="tel:+1-770-736-8031 x56442"
+            >
+              1-770-736-8031 x56442
+            </a>
+          </td>
+          <td>
+            <a class="tableBodyEmail"
+               href="mailto:Sincere@april.biz"
+            >
+              Sincere@april.biz
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`;
+
+exports[`<UserList /> Should render a <Spinner /> 1`] = `
+<section class="userList">
+  <div class="wrap">
+    <div class="spinner">
+      <div aria-busy="true"
+           class
+      >
+        <svg height="80"
+             width="80"
+             fill="#89a8ff"
+             viewbox="0 0 55 80"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-label="audio-loading"
+        >
+          <g transform="matrix(1 0 0 -1 0 80)">
+            <rect width="10"
+                  height="20"
+                  rx="3"
+            >
+              <animate attributename="height"
+                       begin="0s"
+                       dur="4.3s"
+                       values="20;45;57;80;64;32;66;45;64;23;66;13;64;56;34;34;2;23;76;79;20"
+                       calcmode="linear"
+                       repeatcount="indefinite"
+              >
+              </animate>
+            </rect>
+            <rect x="15"
+                  width="10"
+                  height="80"
+                  rx="3"
+            >
+              <animate attributename="height"
+                       begin="0s"
+                       dur="2s"
+                       values="80;55;33;5;75;23;73;33;12;14;60;80"
+                       calcmode="linear"
+                       repeatcount="indefinite"
+              >
+              </animate>
+            </rect>
+            <rect x="30"
+                  width="10"
+                  height="50"
+                  rx="3"
+            >
+              <animate attributename="height"
+                       begin="0s"
+                       dur="1.4s"
+                       values="50;34;78;23;56;23;34;76;80;54;21;50"
+                       calcmode="linear"
+                       repeatcount="indefinite"
+              >
+              </animate>
+            </rect>
+            <rect x="45"
+                  width="10"
+                  height="30"
+                  rx="3"
+            >
+              <animate attributename="height"
+                       begin="0s"
+                       dur="2s"
+                       values="30;45;13;80;56;72;45;76;34;23;67;30"
+                       calcmode="linear"
+                       repeatcount="indefinite"
+              >
+              </animate>
+            </rect>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`<UserList /> Should render an <ErrorIndicator /> 1`] = `
+<section class="userList">
+  <div class="wrap">
+    <div class="errorIndicator">
+      <h2>
+        Error
+      </h2>
+      <p>
+        Something has gone terribly wrong
+      </p>
+      <p>
+        (but we already try to fix it)
+      </p>
+    </div>
+    <table class="table">
+      <thead class="tableHead">
+        <tr>
+          <th>
+            Image
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Phone
+          </th>
+          <th>
+            Email
+          </th>
+        </tr>
+      </thead>
+      <tbody class="tableBody">
+        <tr>
+          <td>
+            <img class="tableBodyImage"
+                 src="https://cdn.pixabay.com/user/2020/10/03/07-51-18-705_250x250.jpg"
+                 alt="Leanne Graham"
+            >
+          </td>
+          <td>
+            Leanne Graham
+          </td>
+          <td>
+            <a class="tableBodyPhone"
+               href="tel:+1-770-736-8031 x56442"
+            >
+              1-770-736-8031 x56442
+            </a>
+          </td>
+          <td>
+            <a class="tableBodyEmail"
+               href="mailto:Sincere@april.biz"
+            >
+              Sincere@april.biz
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`;
