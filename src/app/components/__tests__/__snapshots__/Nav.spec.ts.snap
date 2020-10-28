@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> Don't render button Home if pathname is "/" 1`] = `
+<header class="header">
+  <nav class="nav">
+    <input class="searchBar"
+           type="search"
+           placeholder="Search people by name..."
+           value
+    >
+  </nav>
+</header>
+`;
+
+exports[`<Nav /> Render button Home if pathname different then "/" 1`] = `
+<header class="header">
+  <nav class="nav">
+    <a class="navLink"
+       href="/"
+    >
+      Home
+    </a>
+    <input class="searchBar"
+           type="search"
+           placeholder="Search people by name..."
+           value
+    >
+  </nav>
+</header>
+`;
