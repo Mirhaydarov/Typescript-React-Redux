@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserProfile /> Should render an <ErrorIndicator /> if didn't find a match in data 1`] = `
+<section class="profile">
+  <div class="wrap">
+    <div class="errorIndicator">
+      <h2>
+        Error
+      </h2>
+      <p>
+        Something has gone terribly wrong
+      </p>
+      <p>
+        (but we already try to fix it)
+      </p>
+    </div>
+  </div>
+</section>
+`;
